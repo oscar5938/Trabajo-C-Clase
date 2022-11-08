@@ -1,0 +1,15 @@
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\bin\Debug\net6.0\Bankya.exe
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\bin\Debug\net6.0\Bankya.deps.json
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\bin\Debug\net6.0\Bankya.runtimeconfig.json
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\bin\Debug\net6.0\Bankya.dll
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\bin\Debug\net6.0\Bankya.pdb
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\Bankya.csproj.AssemblyReference.cache
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\Bankya.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\Bankya.AssemblyInfoInputs.cache
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\Bankya.AssemblyInfo.cs
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\Bankya.csproj.CoreCompileInputs.cache
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\Bankya.dll
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\refint\Bankya.dll
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\Bankya.pdb
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\Bankya.genruntimeconfig.cache
+C:\Users\A8-PC100\Desktop\Cosas\Bankya\obj\Debug\net6.0\ref\Bankya.dll

@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Text.Json;
+using Newtonsoft.Json;
+
 
 namespace Bankya
 {
@@ -36,7 +39,7 @@ namespace Bankya
         }
         static void Menu()
         {
-            Console.WriteLine("Bienvenido a Bankya, que desea hacer?: \n 1:Crear cuenta \n 2:Meter dinero \n 3:Sacar dinero \n 4:Ver movimientos \n 5:Salir");
+            Console.WriteLine("Bienvenido a Bankya, que desea hacer?: \n 1:Crear cuenta \n 2:Meter dinero \n 3:Sacar dinero \n 4:Ver movimientos \n 5:Exportar datos \n 6:Importar datos \n 7: Salir");
             int num = int.Parse(Console.ReadLine());
             switch (num)
             {
@@ -58,33 +61,53 @@ namespace Bankya
                         int DineroAMeter = int.Parse(Console.ReadLine());
                         Console.WriteLine("Procedencia del ingreso");
                         string motivo = Console.ReadLine();
-                         Cuenta.MakeDeposit(DineroAMeter, DateTime.Now, motivo);
+                        Cuenta.MakeDeposit(DineroAMeter, DateTime.Now, motivo);
                     }
                     Menu();
                     break;
                 case 3:
-                Console.WriteLine("Escribe tu numero de cuenta");
-                     NumeroCuenta = Console.ReadLine();
+                    Console.WriteLine("Escribe tu numero de cuenta");
+                    NumeroCuenta = Console.ReadLine();
                     if (Cuenta.Number == NumeroCuenta)
                     {
                         Console.WriteLine("Cuanta cantidad va a sacar?");
                         int DineroASacar = int.Parse(Console.ReadLine());
                         Console.WriteLine("Motivo de la retirada?");
                         string motivoS = Console.ReadLine();
-                Cuenta.MakeWithdrawal(DineroASacar, DateTime.Now, motivoS);
+                        Cuenta.MakeWithdrawal(DineroASacar, DateTime.Now, motivoS);
                     }
                     Menu();
                     break;
                 case 4:
-                Console.WriteLine("Escribe tu numero de cuenta");
-                     NumeroCuenta = Console.ReadLine();
+                    Console.WriteLine("Escribe tu numero de cuenta");
+                    NumeroCuenta = Console.ReadLine();
                     if (Cuenta.Number == NumeroCuenta)
                     {
-                Console.WriteLine(Cuenta.GetAccountHistory());
+                        Console.WriteLine(Cuenta.GetAccountHistory());
                     }
                     Menu();
                     break;
                 case 5:
+                    Console.WriteLine("Escribe tu numero de cuenta");
+                    NumeroCuenta = Console.ReadLine();
+                    if (Cuenta.Number == NumeroCuenta)
+                    {
+                        JsonSerializerOptions options = new JsonSerializerOptions();
+                        string jsonString = System.Text.Json.JsonSerializer.Serialize(Cuenta, options);
+                        File.WriteAllText("Prueba.json", jsonString);
+                        Console.WriteLine(jsonString);
+
+                    }
+                    Menu();
+                    break;
+                case 6:
+                    string jsonString2 = File.ReadAllText("Prueba.json");
+                    Cuenta = JsonConvert.DeserializeObject<BankAccount>(jsonString2);
+                    Console.WriteLine(Cuenta);
+                    Console.WriteLine($"Account {Cuenta.Number} was created for {Cuenta.Owner} with {Cuenta.Balance} initial balance.");
+                    // Menu();
+                    break;
+                case 7:
                     break;
                 default:
                     Console.WriteLine("Has metido un parametro no reconocido por la funcion \n Introduce un numero valido");

@@ -7,7 +7,7 @@ namespace Bankya
 {
     class BankAccount
     {
-        public string Number { get; }
+        public string Number { get; set; }
         public string Owner { get; set; }
         public decimal Balance
         {
@@ -21,12 +21,15 @@ namespace Bankya
 
                 return balance;
             }
+
+
         }
 
         private static int accountNumberSeed = 1;
 
         private List<Transaction> allTransactions = new List<Transaction>();
 
+        public BankAccount(){}
         public BankAccount(string name, decimal initialBalance)
         {
             this.Number = accountNumberSeed.ToString();
@@ -72,6 +75,9 @@ namespace Bankya
             }
 
             return report.ToString();
+        }
+        public string ToString(){
+            return Number + " " + Owner + " " + Balance;
         }
     }
 }

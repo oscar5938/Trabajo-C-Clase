@@ -101,7 +101,7 @@ namespace Bankya
         {
             string jsonString2 = File.ReadAllText("Lista_Clientes.json");
             CuentasBankya = JsonConvert.DeserializeObject<List<BankAccount>>(jsonString2);
-            Console.WriteLine(CuentasBankya[0].Owner);
+            Console.WriteLine(CuentasBankya[0].Balance);
         }
     }
 }

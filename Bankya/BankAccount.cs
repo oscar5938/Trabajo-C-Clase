@@ -9,7 +9,8 @@ namespace Bankya
     {
         public string Number { get; set; }
         public string Owner { get; set; }
-        public decimal Balance
+        public decimal Balance  { get; set; }
+        /*
         {
             get
             {
@@ -20,10 +21,15 @@ namespace Bankya
                 }
 
                 return balance;
+                
+            }
+            set {
+
             }
 
 
         }
+        */
 
         private static int accountNumberSeed = 1;
 

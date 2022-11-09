@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A8-PC100\\Desktop\\Cosas\\Bankya\\Bankya.csproj",
+      "projectUniqueName": "C:\\Users\\A8-PC100\\Desktop\\Proyecto bankia\\Trabajo-C-Clase\\Bankya\\Bankya.csproj",
       "projectName": "Bankya",
-      "projectPath": "C:\\Users\\A8-PC100\\Desktop\\Cosas\\Bankya\\Bankya.csproj",
+      "projectPath": "C:\\Users\\A8-PC100\\Desktop\\Proyecto bankia\\Trabajo-C-Clase\\Bankya\\Bankya.csproj",
       "packagesPath": "C:\\Users\\A8-PC100\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A8-PC100\\Desktop\\Cosas\\Bankya\\obj\\",
+      "outputPath": "C:\\Users\\A8-PC100\\Desktop\\Proyecto bankia\\Trabajo-C-Clase\\Bankya\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\A8-PC100\\AppData\\Roaming\\NuGet\\NuGet.Config",
